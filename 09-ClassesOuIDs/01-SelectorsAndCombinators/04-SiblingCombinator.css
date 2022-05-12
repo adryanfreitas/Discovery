@@ -1,0 +1,11 @@
+/* h1 + p {
+    color: red;
+}
+
+button + button {
+    margin-left: 32px;
+} */
+
+h1 ~ p {
+    color: red;
+}
