@@ -1,0 +1,17 @@
+/* ul li:first-child {
+font-weight: bold;
+color: red;
+} */
+
+/* article p:nth-of-type(3) {
+    font-weight: bold;
+    font-size: 18px;
+} */
+
+ul li:nth-of-type(odd) {
+    color:gray;
+    background: #eee;
+}
+ul li:nth-child(even) {
+    color: gray;
+}

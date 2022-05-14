@@ -1,0 +1,12 @@
+/* li::after {
+  content: ";";
+  width: 10px;
+  height: 1px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0px;
+} */
+
+p:nth-last-of-type(2)::first-line {
+    font-weight: bold;
+}

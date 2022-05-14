@@ -1,0 +1,12 @@
+/* a:hover {
+    color: red;
+} */
+
+/* input:focus {
+    border-color: blue;
+    outline: none;
+} */
+
+input:required {
+    background-color: red;
+}
