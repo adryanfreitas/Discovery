@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh; */
+    border: 1xp solid red;
+    height: 200px;
+}
+
+.item {
+    background-color: gray;
+    border: 1px solid;
+    flex: 1;
+}
