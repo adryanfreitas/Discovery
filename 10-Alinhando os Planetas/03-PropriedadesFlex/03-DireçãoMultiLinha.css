@@ -1,0 +1,26 @@
+/* .box {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px;
+}
+
+.box div {
+    border: 1px solid;
+
+    width: 80px;
+} */
+
+.box {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    border: 1px dashed red;
+
+    height: 150px;
+}
+
+.box div {
+    border: 1px solid;
+}
