@@ -1,0 +1,9 @@
+.box {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box div {
+    border: 1px solid;
+    flex: 1;
+}

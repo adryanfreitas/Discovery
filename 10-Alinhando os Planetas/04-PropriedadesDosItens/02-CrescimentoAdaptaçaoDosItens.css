@@ -1,0 +1,21 @@
+.box {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px dashed red;
+
+    height: 150px;
+}
+
+.box div {
+    border: 1px solid;
+}
+
+.box div:nth-child(2),
+.box div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.box div:nth-child(1) {
+    flex-grow: 2;
+}
