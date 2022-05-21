@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+div {
+    /* display: flex; */
+    border: 1px solid;
+    height: 80vh;
+    background: lightgray;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex-basis: 25%;
+    flex: 1;
+    /* justify-content: center; */
+    padding: 2rem;
+}
+
+
+
+
+table {
+    width: 100%;
+}
+
+
+td {
+    text-align: center;
+    border: 1px solid;
+}
+
+th {
+    border: 1px solid;
+}
+
+.produto {
+    text-align: left;
+}
