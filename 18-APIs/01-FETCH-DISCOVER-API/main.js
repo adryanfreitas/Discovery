@@ -33,7 +33,28 @@ function addUser(newUser) {
 }
 
 function updateUser() {
-fetch(`url4`)
+ fetch(`${url}/1`, {
+    method: "PUT",
+    body: JSON.stringify(updateUser),
+    headers: {
+    "Content-type": "aplication/json; charset=UTF-8"
+    }
+ })
+    .then(response => response.json())
+    .then(data => alertApi.textContent = data)
+    .catch(error => console.error(error))
+}
+
+function deleteUser(id) {
+    fetch(`${url}/${id}`, {
+    method: "DELETE",
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+  }
+})
+        .then(response => response.json())
+        .then(data => alertApi.textContent = data)
+        .catch(error => console.error(error))
 }
 
 const newUser = {
@@ -49,5 +70,6 @@ const updateUser = {
     city: "Recife"
 }
 
+deleteUser(5)
 getUsers()
 getUser()
