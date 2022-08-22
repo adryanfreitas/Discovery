@@ -32,18 +32,23 @@ function updateUser() {
     .then(response => console.log(response))
     .catch(error => console.error(error))
 }
+
 const userUpdated = {
     name: "Marcelo Calvis",
     avatar: "https://picsum.photos/200/300",
     city: "Recife"
-
-
 }
-updateUser()
 
+function deleteUser(id) {
+    axios.delete(`${url}/${id}`)
+    .then(response => console.log(response))
+    .catch(error => console.error(error))
+}
+
+deleteUser(1)
 
 getUsers()
-getUser()
+getUser(2)
 
 const newUser = {
     name: "Olivia Zars",
@@ -52,3 +57,4 @@ const newUser = {
 }
 
 // addNewUser()
+// updateUser()
