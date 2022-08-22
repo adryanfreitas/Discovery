@@ -1,4 +1,4 @@
-const url = 'htpps://localhost:5500/api'
+const url = "htpps://localhost:5500/api"
 
 function getUsers() {
     axios.get(url)
@@ -16,8 +16,8 @@ function addNewUser(newUser) {
     .catch(error => console.error(error))
 }
 
-function getUser() {
-    axios.get(url)
+function getUser(id) {
+axios.get(`${url}/${id}`)
     .then(response => {
         userName.textContent = response.data.name
         userCity.textContent = response.data.city
@@ -27,8 +27,23 @@ function getUser() {
     .catch(error => console.error(error))
 }
 
+function updateUser() {
+        axios.put(`${url}/${id}`, userUpdated)
+    .then(response => console.log(response))
+    .catch(error => console.error(error))
+}
+const userUpdated = {
+    name: "Marcelo Calvis",
+    avatar: "https://picsum.photos/200/300",
+    city: "Recife"
+
+
+}
+updateUser()
+
 
 getUsers()
+getUser()
 
 const newUser = {
     name: "Olivia Zars",
